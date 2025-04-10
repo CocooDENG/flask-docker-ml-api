@@ -5,8 +5,10 @@ Dockerfile: Defines the Docker container with Python 3.10 and necessary dependen
 requirements.txt: Lists the required Python packages (flask, scikit-learn, numpy) to run the API inside Docker.
 
 ## How to Run the Project
+
 Step 1: Build the Docker image
 ```bash docker build -t causal-api .
+
 Step 2: Run the Docker container
 ```bash docker run -p 5000:5000 causal-api
 
