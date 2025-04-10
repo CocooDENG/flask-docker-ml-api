@@ -9,8 +9,7 @@ requirements.txt: Lists the required Python packages (flask, scikit-learn, numpy
 ## How to Run the Project
 
 ### Step 1: Build the Docker image
-```bash
-docker build -t causal-api .
+```bash docker build -t causal-api .
 
 ### Step 2: Run the Docker container
 ```bash
@@ -18,3 +17,16 @@ docker run -p 5000:5000 causal-api
 
 The API will be accessible at http://localhost:5000/predict.
 
+## Viewing Model Parameters (Intercept and Coefficients)
+
+The app prints the trained regression model’s parameters — including:
+
+- **Intercept (α)**: The baseline engagement score
+- **Coefficients (τ, β)**: The estimated average treatment effect and spending effect
+
+To view them:
+
+### ▶️ If running without Docker:
+
+```bash
+python3 app.py
