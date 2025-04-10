@@ -14,6 +14,7 @@ requirements.txt: Lists the required Python packages (flask, scikit-learn, numpy
 ### Step 2: Run the Docker container
 ```bash
 docker run -p 5000:5000 causal-api
+```bash
 
 The API will be accessible at http://localhost:5000/predict.
 
