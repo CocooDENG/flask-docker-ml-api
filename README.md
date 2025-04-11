@@ -1,3 +1,4 @@
+# Overview
 This project provides a lightweight Flask-based API designed to estimate stakeholder engagement scores using a linear regression model grounded in the Rubin Causal Model framework. The model predicts outcomes based on treatment status (w) and sustainability spending (x).
 ## Project Structure
 app.py: Contains the Flask server and a /predict endpoint. It trains a linear regression model and returns predicted engagement scores based on input parameters (w, x).
