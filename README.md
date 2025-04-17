@@ -17,8 +17,10 @@ docker build -t causal-api .
 ```bash
 docker run -p 5000:5000 causal-api
 ```
-
-The API will be accessible at http://localhost:5000/predict.
+### Step 3: Test the API
+```bash
+curl "http://localhost:5002/predict?w=1&x=20"
+```
 
 ## Viewing Model Parameters (Intercept and Coefficients)
 
